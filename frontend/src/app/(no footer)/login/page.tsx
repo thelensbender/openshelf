@@ -6,7 +6,7 @@ export default function Login() {
     <div className="flex flex-col justify-between w-full h-full">
       <div className="flex flex-col justify-start">
         <div>{/* Logo part */}</div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-4">
           {/* Heading and description */}
           <div>
             <h1 className="text-2xl font-bold">Welcome back</h1>
