@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4efea;
+  --foreground: #171717;
+  --outline-strong: #1e2229;
+  --outline: #d6cec2;
+  --mustard: #e19c3c;
+  --caramel: #a86a42;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-outline: var(--outline);
+  --color-outline-strong: var(--outline-strong);
+  --color-outline: var(--outline);
+  --color-mustard: var(--mustard);
+  --color-caramel: var(--caramel);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-dm-sans), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-fraunces), sans-serif;
+}
+
+/*
+## Colors
+
+The palette preserves the four core brand colors—`vintage-indigo` (`#1E2229`), `mustard` (`#E19C3C`), `caramel` (`#A86A42`), and `sand` (`#F4EFEA`)—paired with contrast-compliant semantic roles for light-mode reading surfaces.
+
+```yaml
+colors:
+  vintage-indigo: "#1E2229"
+  mustard: "#E19C3C"
+  caramel: "#A86A42"
+  sand: "#F4EFEA"
+  sand-elevated: "#FBF8F4"
+  sand-muted: "#EAE2D8"
+  primary: "#E19C3C"
+  on-primary: "#1E2229"
+  secondary: "#A86A42"
+  on-secondary: "#0B0B0B"
+  surface: "#F4EFEA"
+  on-surface: "#1E2229"
+  on-surface-variant: "#57534E"
+  surface-container: "#FBF8F4"
+  surface-container-high: "#EAE2D8"
+  outline: "#D6CEC2"
+  outline-strong: "#1E2229"
+  error: "#B43C2E"
+  on-error: "#FBF8F4"
+  success: "#2E6F4E"
+  on-success: "#FBF8F4"
+```
+
+Component implementations live as individual HTML sticker sheet files in
+`components/`. Each file contains the canonical, styled HTML components with
+`<!-- COMPONENT: name -->` comment markers. Read each file before use.
+
+- **Button** → `@components/button.html`: `button-primary`, `button-icon`, `button-with-icon`
+- **Card** → `@components/card.html`: `card-elevated`, `card-action`, `card-interactive`, `card-interactive-2`
+- **Searchbar** → `@components/searchbar.html`: `searchbar-standard`, `searchbar-with-suggestions` */
