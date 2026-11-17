@@ -3,10 +3,11 @@
 import { Eye, EyeOff } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import MustardButtonNoIcon from "../ui/mustardButton-NoIcon";
 
 export default function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
-  const Icon = showPassword ? EyeOff : Eye;
+  const Icon = showPassword ? Eye : EyeOff;
   return (
     <form className="flex flex-col gap-4 bg-white p-4 rounded-xl shadow-md">
       <div className="flex flex-col gap-2">
@@ -45,12 +46,7 @@ export default function LoginForm() {
           </div>
         </div>
       </div>
-      <button
-        type="submit"
-        className="bg-mustard text-black text-sm p-2 rounded-xl cursor-pointer"
-      >
-        Log In
-      </button>
+      <MustardButtonNoIcon text="Log In"/>
     </form>
   );
 }

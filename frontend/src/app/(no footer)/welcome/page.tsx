@@ -1,3 +1,5 @@
+import MustardButtonNoIcon from "@/src/ui/mustardButton-NoIcon";
+
 export default function Welcome() {
   return (
     <div className="flex flex-col justify-between items-center w-full">
@@ -14,12 +16,7 @@ export default function Welcome() {
       </div>
 
       {/* Next Button */}
-      <button
-        type="button"
-        className="w-full bg-mustard text-black text-sm p-2 rounded-xl cursor-pointer"
-      >
-        Next
-      </button>
+      <MustardButtonNoIcon text="Next"/>
     </div>
   );
 }
