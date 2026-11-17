@@ -21,7 +21,7 @@ export default function Login() {
       <div className="flex justify-center">
         <p className="text-sm text-outline-strong">
           New here?{" "}
-          <Link href="/register" className="text-caramel cursor-pointer">
+          <Link href="/signup" className="text-caramel cursor-pointer">
             Create an account
           </Link>
         </p>
